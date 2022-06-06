@@ -3,7 +3,7 @@ import {View, Text} from 'react-native'
 
 export default function Szabalyok() {
   return (
-      <View>
+      <View style={{ marginTop: 30}}>
           <Text>Szabalyok</Text>
       </View>
   )
