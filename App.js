@@ -14,7 +14,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <StatusBar backgroundColor="rgb(242,242,242)" style={{ color: "#000000" }}/>
-      <Tab.Navigator screenOptions={{ headerShown: false }} initialRouteName="Kezdőlap">
+      <Tab.Navigator screenOptions={{ headerShown: false, tabBarActiveTintColor: 'black', }} initialRouteName="Kezdőlap">
         <Tab.Screen
           name="Kezdőlap"
           component={Kezdolap}
