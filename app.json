@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "rehal-mobile",
+    "name": "ReHal - újrahasznosítva",
     "slug": "rehal-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,7 +18,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.barnagoz.rehalmobile"
     },
     "android": {
       "adaptiveIcon": {
