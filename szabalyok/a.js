@@ -17,7 +17,7 @@ export default function A() {
   return (
     <View>
       <Text>A</Text>
-      <Button title="Kedvecekbe rak" onPress={saveFavourites}></Button>
+      <Button title="Kedvecekbe rak" onPress={saveFavourites} />
     </View>
   );
 }

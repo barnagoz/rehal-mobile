@@ -24,7 +24,7 @@ export default function HomeCarousel({ itemWidth, sliderWidth }) {
     },
   ];
 
-  const _renderItem = ({ item }) => {
+  function _renderItem({ item }) {
     return (
       <View
         style={{
@@ -44,7 +44,7 @@ export default function HomeCarousel({ itemWidth, sliderWidth }) {
             position: 'absolute',
             zIndex: 0,
           }}
-        ></Image>
+         />
         <Text
           style={{
             zIndex: 1,
@@ -62,15 +62,15 @@ export default function HomeCarousel({ itemWidth, sliderWidth }) {
         </Text>
       </View>
     );
-  };
+  }
   return (
     <Carousel
       data={testdata}
       renderItem={_renderItem}
       sliderWidth={sliderWidth}
       itemWidth={itemWidth}
-      loop={true}
-      autoplay={true}
+      loop
+      autoplay
     />
   );
 }

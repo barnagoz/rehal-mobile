@@ -1,9 +1,9 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
+import { View, Text } from "react-native";
 import SzabalyHome from "../szabalyok/home.js"
 import ALehetoseg from "../szabalyok/a.js"
 import BLehetoseg from "../szabalyok/b.js"
-import { View, Text } from "react-native";
 
 export default function Szabalyok() {
   const Stack = createStackNavigator();
