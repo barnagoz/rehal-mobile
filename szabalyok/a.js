@@ -3,17 +3,23 @@ import { Text, Button, View } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function A() {
-  async function saveFavourites() {
+  const saveFavourites = async () => {
     // getting the current favourite list
-    let favourites = JSON.parse(await AsyncStorage.getItem('@favourite'));
+    let favourites = JSON.parse(await AsyncStorage.getItem('@favourites'));
     if (favourites == null) {
       favourites = [{ name: 'A játékszabály', link: 'A lehetőség' }];
     } else {
       favourites.push({ name: 'A játékszabály', link: 'A lehetőség' });
     }
     // saving the favourite list
-    await AsyncStorage.setItem('@favourites', JSON.stringify(favourites));
-  }
+    try {
+      const string = JSON.stringify(favourites);
+      await AsyncStorage.setItem('@favourites', string);
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.log(e);
+    }
+  };
   return (
     <View>
       <Text>A</Text>
